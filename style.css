@@ -1,0 +1,168 @@
+/*Links*/
+body{
+    background-image: linear-gradient(1deg,black,blue);
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+/*Cabeçalho*/
+.container-header{
+    
+}
+.container-itens-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: blue;
+}
+.logo{
+    display: flex;
+    justify-content : center;
+    align-items: center;
+    flex-direction: row;
+}
+.logo img{
+    width:50px;
+    height: 50px;
+}
+.logo h1,.saldo,.ticket,.texto-sair{
+    color: whitesmoke;
+}
+/*Abaixo do cabeçalho*/
+.sumario-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: burlywood;
+}
+.itens-sumario-2 a{
+    position: relative;
+    left: 100px;
+    top: 20px;
+    text-decoration: none;
+}
+.itens-1 a{
+    font-size: 15px;
+}
+.sumario-input{
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: whitesmoke;
+}
+.botao-pesquisar{
+    color: red;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: black;
+}
+
+/*Footer*/
+.container-formulario{
+    background-image: linear-gradient(1deg,black,blue);
+    position: relative;
+    padding-left: 15px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+}
+.inserir-nome,.inserir-email{
+    border: 1px solid;
+    border-radius: 10px;
+}
+.texto-ticket{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: greenyellow;
+    font-size: 1.5em;
+}
+.texto-ticket-2{
+    color: whitesmoke;
+}
+/*marquee*/
+.slogan{
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    
+}
+/*Parte Central- Main*/
+.container-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-image: linear-gradient(1deg,black,blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 50px;
+    border-radius: 8px;
+
+}
+.texto-melhor-oferta{
+    position : absolute;
+    top: 20px;
+    text-align: center;
+    color: greenyellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+}
+.textos-main{
+    color: azure;
+}
+figure p{
+    text-align: center;
+    font-size: large;
+}
+.Melhor-oferta img{
+    width: 100%;
+}
+.Melhor-oferta{
+    width: 300px;
+}
+.Oferta-3{
+    width: 300px;
+}
+.Oferta-3 img{
+    width: 100%;
+}
+.Oferta-1{
+    width: 300px;
+}
+.Oferta-1 img{
+    width: 100%;
+}
+.Oferta-1 button{
+    position: relative;
+    left: 120px;
+    color: green;
+    margin-bottom: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.Melhor-oferta button{
+    position: relative;
+    left: 120px;
+    margin-bottom: 5px;
+    color: green;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.Oferta-3 button{
+    position: relative;
+    left: 120px;
+    color: green;
+    margin-bottom: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.botao-alertar{
+    border: 1px solid;
+    border-radius: 10px;
+    color: red;
+    border-color: black;
+}
