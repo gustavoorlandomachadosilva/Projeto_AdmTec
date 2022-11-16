@@ -13,7 +13,7 @@
             <section>
                 <div class="container-header">
                     <div class="container-itens-logo">
-                        <h3 class="saldo">Saldo: <mark>0</mark></h3>
+                        <h3 class="saldo">Saldo: <mark id="idSaldo">30</mark></h3>
                         <div class="logo">
                             <img src="./Logo.png" alt="Logo">
                             <h1>Ingressos</h1>
@@ -68,7 +68,20 @@
                      <p class="textos-main">Michael Jackson</p>
                      <p class="textos-main">King of Pop</p>
                  </figure>
-                 <button>Comprar</button>
+                 <button onclick="acao()">Comprar</button>
+                 <div class="modal">
+                    <div class="fechar" onclick="fechar()"></div>
+                        <p><mark>Ficha Técnica</mark>:</p>
+                        <ul>
+                           <li><strong>Nome do Evento</strong>: Show do Michael Jackson</li> 
+                            <li><strong>Data</strong>: XX/XX/XXXX</li>
+                            <li><strong>Horário</strong>: YY:YY</li>
+                            <li><strong>Local</strong>: Rua X, numero Y</li>
+                            <li><strong>Cadeira</strong>: Numero 1</li>
+                        </ul>
+                        <p><mark>Valor</mark>: <b>20R$</b></p>
+                        <button class="btn-modal-finalizar">Finalizar Compra</button>
+                 </div>
             </div>
             <div class="Melhor-oferta">
                 <figure>
@@ -76,7 +89,20 @@
                     <p class="textos-main">Queen</p>
                     <p class="textos-main">Best Hits</p>
                 </figure>
-                <button>Comprar</button>
+                <button onclick="acao2()">Comprar</button>
+                 <div class="modal2">
+                    <div class="fechar2" onclick="fechar2()"></div>
+                        <p><mark>Ficha Técnica</mark>:</p>
+                        <ul>
+                            <li><strong>Nome do Evento</strong>: Show Queen</li> 
+                            <li><strong>Data</strong>: XX/XX/XXXX</li> 
+                            <li><strong>Horário</strong>: YY:YY</li> 
+                            <li><strong>Local</strong>: Rua X, numero Y</li>  
+                            <li><strong>Cadeira </strong>: Numero 2</li> 
+                        </ul>
+                        <p><mark>Valor</mark>: <b>10R$</b></p>
+                        <button class="btn-modal-finalizar2">Finalizar Compra</button>
+                 </div>
             </div>
             <div class="Oferta-3">
                 <figure>
@@ -84,10 +110,23 @@
                     <p class="textos-main">Anitta</p>
                     <p class="textos-main">Grandes Sucessos</p>
                 </figure>
-               <button>Comprar</button>
+                <button onclick="acao3()">Comprar</button>
+                <div class="modal3">
+                   <div class="fechar3" onclick="fechar3()"></div>
+                       <p><mark>Ficha Técnica</mark>:</p>
+                       <ul>
+                            <li><strong>Nome do Evento</strong>: Show da Anitta</li> 
+                            <li><strong>Data</strong>: XX/XX/XXXX</li> 
+                            <li><strong>Horário</strong>: YY:YY</li> 
+                            <li><strong>Local</strong>: Rua X, numero Y</li> 
+                            <li><strong>Cadeira</strong>: Numero 3</li> 
+                       </ul>
+                       <p><mark>Valor</mark>: <b>20R$</b></p>
+                       <button class="btn-modal-finalizar3">Finalizar Compra</button>
+                </div>
             </div>
        </div>
     </main>
-    
+<script src="./script.js"></script>
 </body>
 </html>
