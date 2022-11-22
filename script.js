@@ -43,7 +43,10 @@ btn3.addEventListener('click',function(){
     document.getElementById("idSaldo").textContent = "10";
 });
 //sair
-const sair = document.querySelector('.texto-sair');
+const sair = document.querySelector('.botao-sair');
+function redirecionar(params) {
+    location.href = "login.html";
+}
 sair.addEventListener('click',function(){
     alert("Deslogado com Sucesso");
     document.getElementById("idSaldo").textContent = "0";
