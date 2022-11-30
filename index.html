@@ -23,6 +23,9 @@
         form h3{
             color: whitesmoke;
         }
+        form h4{
+            color: green;
+        }
         input{
             display: block;
             margin: 10px auto;
@@ -30,28 +33,50 @@
             height: 30px;
             border-radius: 10px;
         }
+        input[type = "submit"]:hover{
+           background-color: green;
+        }
+        
 
     </style>
 </head>
 <body>
     <form>
         <img src="./Logo.png" alt="Logo" width="50%">
-        <h3>Login</h3>
-        <input type="text" placeholder="Digite seu Username" id="login">
-        <input type="password" placeholder="Digite sua Senha" id="senha">
-        <input type="submit" onclick="logar(); return false">
+        <div>
+            <h3>Login</h3>
+            <input type="text" placeholder="Digite seu Username" id="login">
+            <input type="password" placeholder="Digite sua Senha" id="senha">
+            <input type="submit" onclick="logar(); return false">
+
+        </div>
+        
+        <div>
+            <h3>Cadastro</h3>
+            <h4>Cadastre-se abaixo !</h4>
+            <input type="text" placeholder="Digite seu Username" id="Cadastrologin">
+            <input type="password" placeholder="Digite sua Senha" id="Cadastrosenha">
+            <input type="submit" onclick="enviar(); return false">
+        </div>
     </form>
 
     <script>
         function logar() {
             var login = document.getElementById('login').value;
             var senha = document.getElementById('senha').value;
-            if (login == "index" && senha == "index") {
+            var cadastrologin = document.getElementById('Cadastrologin').value;
+            var cadastrosenha = document.getElementById('Cadastrosenha').value;
+            if (login == cadastrologin && senha == cadastrosenha) {
                 alert('Usuário logado com sucesso!');
                 location.href = "site.html";
             }else{
                 alert('Username ou senha errada');
             }
+        }
+        function enviar(cadastrologin,Cadastrosenha) {
+            Cadastrosenha = senha;
+            cadastrologin = login;
+            alert('Cadastrado com sucesso');
         }
     </script>
 </body>
